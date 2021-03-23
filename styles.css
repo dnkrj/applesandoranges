@@ -1,4 +1,4 @@
-body, header, section, footer, figure, ul, li, h1, h2, p {
+body, header, section, footer, figure, ul, li, h1, h2, h3, p {
 	margin: 0;
 	padding: 0;
 }
@@ -42,12 +42,15 @@ li {
 	border: 1px solid #e75c00;
 }
 
+figure {
+	position: relative;
+}
+
 figcaption {
 	padding: 0 20px 10px 20px;
 }
 
 img {
-	height: 100px;
 	width: 100%;
 	border-bottom: 1px solid #e75c00;
 }
@@ -68,6 +71,19 @@ h2 {
 	margin: 20px;
 }
 
-p {
+p, h3 {
+	font-size: 16px;
+	font-weight: 400;
 	margin: 20px;
+}
+
+h3 {
+	position: absolute;
+	top: 25px;
+	right: -20px;
+	transform: rotate(45deg);
+}
+
+.comingsoon {
+	opacity: 0.5;
 }

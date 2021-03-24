@@ -27,7 +27,7 @@
   <body>
     <header>
       <h1>Substitute</h1>
-      <p>Find more environmentally friendly subsitutions to common cooking ingredients.</p>
+      <p>Find more environmentally friendly alternatives to common cooking ingredients.</p>
       <p><a href="/">More tools to help you eat sustainably.</a></p>
     </header>
 
@@ -50,17 +50,34 @@
     <section>
       <p>Show substitutions for: <input type="text" name="ingredient" id="filterInput" onkeyup="filterList()" placeholder="ingredient"></p>
       <ul>
-        <li data-cat="beef"><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20L less water and requires 95% (309m²) less land than Beef.</p></li>
-        <li data-cat="beef"><h2>Chicken for Beef</h2><p>Per kilo Chicken produces 50% less carbon, uses 20L less water and requires 96% (314m²) less land than Beef.</p></li>
-        <li data-cat="beef"><h2>Fish for Beef</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
-        <li data-cat="beef"><h2>Tofu for Beef</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
-        <li data-cat="pork"><h2>Chicken for Pork</h2><p>Per kilo Chicken produces 50% less carbon, uses 20L less water and requires 96% (314m²) less land than Beef.</p></li>
-        <li data-cat="pork"><h2>Fish for Pork</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
-        <li data-cat="pork"><h2>Tofu for Pork</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
-        <li data-cat="chicken"><h2>Fish for Chicken</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
-        <li data-cat="chicken"><h2>Tofu for Chicken</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
-        <li data-cat="fish"><h2>Tofu for Fish</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
+        <li data-cat="beef"><h2>Pork for Beef</h2><p>Per kilo, Pork produces 88% (53kg) less CO₂e and requires 95% (309m²) less land. It uses 24% (350L) more water than Beef.</p></li>
+        <li data-cat="chicken"><h2>Tofu for Chicken</h2><p>Per kilo, Tofu produces 50% (3kg) less CO₂e, requires 71% (9m²) less land and uses 77% (510L) less water than Chicken.</p></li>
+        <li data-cat="olive"><h2>Rapeseed Oil for Olive Oil</h2><p>Per kilo, Rapeseed Oil produces 30% (0.2kg) less CO₂e, requires 60% (16m²) less land and uses 89% (1900L) less water than Olive Oil.</p></li>
+        <li data-cat="milk"><h2>Soymilk for Milk</h2><p>Per kilo, Soymilk produces 70% (2kg) less CO₂e, requires 93% (8m²) less land and uses 96% (600L) less water than Milk.</p></li>
+        <li data-cat="prawns"><h2>Fish for Prawns</h2><p>Per kilo, Fish produces 58% (7kg) less CO₂e. It requires 183% (5.4m²) more land and uses 5% (176L) more water than Prawns.</p></li>
+        <li data-cat="apples"><h2>Citrus Fruits for Apples</h2><p>Per kilo, Citrus Fruits produce 25% (0.1kg) less CO₂e and use 54% (97L) less water but require 27% (0.2m²) more land and than Apples.</p></li>
+        <li data-cat="berries"><h2>Apples for Berries and Grapes</h2><p>Per kilo, Apples produce 71% (1kg) less CO₂e, require 74% (2m²) less land and use 57% (240L) less water than Berries and Grapes.</p></li>
+        <li data-cat="beef"><h2>Chicken for Beef</h2><p>Per kilo, Chicken produces 90% (54kg) less CO₂e, requires 96% (314m²) less land and uses 55% (790L) less water than Beef.</p></li>
+        <li data-cat="beef"><h2>Fish for Beef</h2><p>Per kilo, Fish produces 92% (55kg) less CO₂e and requires 97% (318m²) less land. It uses 154% (2240L) more water than Beef.</p></li>
+        <li data-cat="prawns"><h2>Tofu for Prawns</h2><p>Per kilo, Tofu produces 75% (9kg) less CO₂e and uses 96% (3370L) less water. It requires 19% (0.5m²) more land than Prawns.</p></li>
+        <li data-cat="lamb"><h2>Tofu for Lamb</h2><p>Per kilo, Tofu produces 88% (21kg) less CO₂e, requires 99% (366m²) less land and uses 92% (1650L) less water than Lamb.</p></li>
+        <li data-cat="lamb"><h2>Fish for Lamb</h2><p>Per kilo, Fish produces 79% (19kg) less CO₂e and requires 98% (361m²) less land. It uses 105% (1890L) more water than Lamb.</p></li>
+        <li data-cat="pork"><h2>Tofu for Pork</h2><p>Per kilo, Tofu produces 57% (4kg) less CO₂e, requires 80% (13m²) less land and uses 92% (1650L) less water than Pork.</p></li>
+        <li data-cat="beef"><h2>Tofu for Beef</h2><p>Per kilo, Tofu produces 95% (57kg) less CO₂e, requires 99% (323m²) less land and uses 90% (1302L) less water than Beef.</p></li>
+        <li data-cat="cheese"><h2>Soymilk for Cheese</h2><p>Per kilo, Soymilk produces 96% (20kg) less CO₂e, requires 99% (87m²) less land and uses 99.5% (5580L) less water than Cheese.</p></li>
+        <li data-cat="chicken"><h2>Fish for Chicken</h2><p>Per kilo, Fish produces 16% (1kg) less CO₂e, requires 31% (4m²) less land. It uses 459% (3030L) more water than Chicken.</p></li>
+        <li data-cat="pork"><h2>Fish for Pork</h2><p>Per kilo, Fish produces 29% (2kg) less CO₂e, requires 52% (9m²) less land. It uses 106% (1900L) more water than Pork.</p></li>
+        <li data-cat="rapeseed"><h2>Sunflower Oil for Rapeseed Oil</h2><p>Per kilo, Sunflower Oil produces 5% (0.02kg) less CO₂e but requires 66% (7m²) more land and uses 324% (770L) more water than Rapeseed Oil.</p></li>
+        <li data-cat="olive"><h2>Sunflower Oil for Olive Oil</h2><p>Per kilo, Sunflower Oil produces 33% (0.2kg) less CO₂e, requires 33% (9m²) less land and uses 53% (1130L) less water than Olive Oil.</p></li>
+        <li data-cat="lamb"><h2>Chicken for Lamb</h2><p>Per kilo, Chicken produces 75% (18kg) less CO₂e, requires 97% (356m²) less land and uses 63% (1140L) less water than Lamb.</p></li>
+        <li data-cat="beef"><h2>Lamb for Beef</h2><p>Per kilo, Lamb produces 60% (36kg) less CO₂e. It requires 13% (44m²) more land and uses 24% (350L) more water than Beef.</p></li>
+        <li data-cat="lamb"><h2>Pork for Lamb</h2><p>Per kilo, Pork produces 71% (17kg) less CO₂e and requires 95% (352m²) less land. It uses the same amount of water.</p></li>
+        <li data-cat="fish"><h2>Tofu for Fish</h2><p>Per kilo, Tofu produces 40% (2kg) less CO₂e, requires 58% (5m²) less land and uses 96% (3540L) less water than Fish.</p></li>
+        <li data-cat="cheese"><h2>Milk for Cheese</h2><p>Per kilo, Milk produces 86% (18kg) less CO₂e, requires 90% (79m²) less landd and uses 89% (4980L) less water than Cheese.</p></li>
+        <li data-cat="berries"><h2>Citrus Fruits for Berries and Grapes</h2><p>Per kilo, Citrus Fruits produce 79% (1kg) less CO₂e, require 64% (2m²) less land and use 80% (340L) less water than Berries and Grapes.</p></li>
+        <li data-cat="pork"><h2>Chicken for Pork</h2><p>Per kilo, Chicken produces 14% (1kg) less CO₂e, requires 30% (5m²) less land and uses 63% (1140L) less water than Pork.</p></li>
       </ul>
+      <p>Data sourced from <a href="//ourworldindata.org/environmental-impacts-of-food">Our World in Data</a>.</p>
       <p>Something missing? <a href="mailto:suggestion@applesandgorang.es">Make a suggestion.</a></p>
     </section>    
 

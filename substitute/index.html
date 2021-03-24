@@ -38,7 +38,7 @@
         list = Array(...document.getElementsByTagName('li'));
 
         list.forEach(li => {
-          if (li.dataset.cat.indexOf(filter) == 0) {
+          if (li.dataset.cat.indexOf(filter) > -1) {
             li.style.display = "";
           } else {
             li.style.display = "none";
@@ -52,7 +52,7 @@
       <ul>
         <li data-cat="beef"><h2>Pork for Beef</h2><p>Per kilo, Pork produces 88% (53kg) less CO₂e and requires 95% (309m²) less land. It uses 24% (350L) more water than Beef.</p></li>
         <li data-cat="chicken"><h2>Tofu for Chicken</h2><p>Per kilo, Tofu produces 50% (3kg) less CO₂e, requires 71% (9m²) less land and uses 77% (510L) less water than Chicken.</p></li>
-        <li data-cat="olive"><h2>Rapeseed Oil for Olive Oil</h2><p>Per kilo, Rapeseed Oil produces 30% (0.2kg) less CO₂e, requires 60% (16m²) less land and uses 89% (1900L) less water than Olive Oil.</p></li>
+        <li data-cat="olive oil"><h2>Rapeseed Oil for Olive Oil</h2><p>Per kilo, Rapeseed Oil produces 30% (0.2kg) less CO₂e, requires 60% (16m²) less land and uses 89% (1900L) less water than Olive Oil.</p></li>
         <li data-cat="milk"><h2>Soymilk for Milk</h2><p>Per kilo, Soymilk produces 70% (2kg) less CO₂e, requires 93% (8m²) less land and uses 96% (600L) less water than Milk.</p></li>
         <li data-cat="prawns"><h2>Fish for Prawns</h2><p>Per kilo, Fish produces 58% (7kg) less CO₂e. It requires 183% (5.4m²) more land and uses 5% (176L) more water than Prawns.</p></li>
         <li data-cat="apples"><h2>Citrus Fruits for Apples</h2><p>Per kilo, Citrus Fruits produce 25% (0.1kg) less CO₂e and use 54% (97L) less water but require 27% (0.2m²) more land and than Apples.</p></li>
@@ -67,8 +67,8 @@
         <li data-cat="cheese"><h2>Soymilk for Cheese</h2><p>Per kilo, Soymilk produces 96% (20kg) less CO₂e, requires 99% (87m²) less land and uses 99.5% (5580L) less water than Cheese.</p></li>
         <li data-cat="chicken"><h2>Fish for Chicken</h2><p>Per kilo, Fish produces 16% (1kg) less CO₂e, requires 31% (4m²) less land. It uses 459% (3030L) more water than Chicken.</p></li>
         <li data-cat="pork"><h2>Fish for Pork</h2><p>Per kilo, Fish produces 29% (2kg) less CO₂e, requires 52% (9m²) less land. It uses 106% (1900L) more water than Pork.</p></li>
-        <li data-cat="rapeseed"><h2>Sunflower Oil for Rapeseed Oil</h2><p>Per kilo, Sunflower Oil produces 5% (0.02kg) less CO₂e but requires 66% (7m²) more land and uses 324% (770L) more water than Rapeseed Oil.</p></li>
-        <li data-cat="olive"><h2>Sunflower Oil for Olive Oil</h2><p>Per kilo, Sunflower Oil produces 33% (0.2kg) less CO₂e, requires 33% (9m²) less land and uses 53% (1130L) less water than Olive Oil.</p></li>
+        <li data-cat="rapeseed oil"><h2>Sunflower Oil for Rapeseed Oil</h2><p>Per kilo, Sunflower Oil produces 5% (0.02kg) less CO₂e but requires 66% (7m²) more land and uses 324% (770L) more water than Rapeseed Oil.</p></li>
+        <li data-cat="olive oil"><h2>Sunflower Oil for Olive Oil</h2><p>Per kilo, Sunflower Oil produces 33% (0.2kg) less CO₂e, requires 33% (9m²) less land and uses 53% (1130L) less water than Olive Oil.</p></li>
         <li data-cat="lamb"><h2>Chicken for Lamb</h2><p>Per kilo, Chicken produces 75% (18kg) less CO₂e, requires 97% (356m²) less land and uses 63% (1140L) less water than Lamb.</p></li>
         <li data-cat="beef"><h2>Lamb for Beef</h2><p>Per kilo, Lamb produces 60% (36kg) less CO₂e. It requires 13% (44m²) more land and uses 24% (350L) more water than Beef.</p></li>
         <li data-cat="lamb"><h2>Pork for Lamb</h2><p>Per kilo, Pork produces 71% (17kg) less CO₂e and requires 95% (352m²) less land. It uses the same amount of water.</p></li>

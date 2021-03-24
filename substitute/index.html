@@ -31,12 +31,35 @@
       <p><a href="/">More tools to help you eat sustainably.</a></p>
     </header>
 
+    <script>
+      function filterList() {
+        input = document.getElementById('filterInput');
+        filter = input.value.toLowerCase();
+        list = Array(...document.getElementsByTagName('li'));
+
+        list.forEach(li => {
+          if (li.dataset.cat.indexOf(filter) == 0) {
+            li.style.display = "";
+          } else {
+            li.style.display = "none";
+          }
+        });
+      }
+    </script>
+
     <section>
+      <p>Show substitutions for: <input type="text" name="ingredient" id="filterInput" onkeyup="filterList()" placeholder="ingredient"></p>
       <ul>
-        <li><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20l less water and requires 30% less land than Beef.</p></li>
-        <li><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20l less water and requires 30% less land than Beef.</p></li>
-        <li><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20l less water and requires 30% less land than Beef.</p></li>
-        <li><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20l less water and requires 30% less land than Beef.</p></li>
+        <li data-cat="beef"><h2>Pork for Beef</h2><p>Per kilo Pork produces 50% less carbon, uses 20L less water and requires 95% (309m²) less land than Beef.</p></li>
+        <li data-cat="beef"><h2>Chicken for Beef</h2><p>Per kilo Chicken produces 50% less carbon, uses 20L less water and requires 96% (314m²) less land than Beef.</p></li>
+        <li data-cat="beef"><h2>Fish for Beef</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
+        <li data-cat="beef"><h2>Tofu for Beef</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
+        <li data-cat="pork"><h2>Chicken for Pork</h2><p>Per kilo Chicken produces 50% less carbon, uses 20L less water and requires 96% (314m²) less land than Beef.</p></li>
+        <li data-cat="pork"><h2>Fish for Pork</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
+        <li data-cat="pork"><h2>Tofu for Pork</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
+        <li data-cat="chicken"><h2>Fish for Chicken</h2><p>Per kilo Fish produces 50% less carbon, uses 20L less water and requires 97% (318m²) less land than Beef.</p></li>
+        <li data-cat="chicken"><h2>Tofu for Chicken</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
+        <li data-cat="fish"><h2>Tofu for Fish</h2><p>Per kilo Tofu produces 50% less carbon, uses 20L less water and requires 99% (323m²) less land than Beef.</p></li>
       </ul>
       <p>Something missing? <a href="mailto:suggestion@applesandgorang.es">Make a suggestion.</a></p>
     </section>    

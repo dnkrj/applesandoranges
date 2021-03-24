@@ -72,7 +72,7 @@ h2 {
 	margin: 20px;
 }
 
-p, h3 {
+p, h3, input {
 	font-size: 16px;
 	font-weight: 400;
 	margin: 20px;
@@ -86,5 +86,18 @@ h3 {
 }
 
 .comingsoon {
+	opacity: 0.5;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #e75c00;
+	color: #e75c00;
+	padding: 5px 10px;
+	background: transparent;
+	width: 130px;
+}
+
+input::placeholder {
 	opacity: 0.5;
 }
